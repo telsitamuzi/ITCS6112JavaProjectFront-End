@@ -26,6 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: react-frontend/yarn.lock
     - run: npm install -g yarn
     - name: yarn install, build and test
       run: |
