@@ -34,10 +34,9 @@ jobs:
         cd react-frontend
         yarn install
         yarn build 
-    - name: deploy 
     - uses: w9jds/firebase-action@master
       with:
         args: deploy --only hosting
       env:
-        FIREBASE_TOEN: AIzaSyAQgrzKb-7GG7xwTGbHO_MA1_zLMCrRqR0
+        FIREBASE_TOKEN: AIzaSyAQgrzKb-7GG7xwTGbHO_MA1_zLMCrRqR0
  
