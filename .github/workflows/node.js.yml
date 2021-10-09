@@ -36,7 +36,7 @@ jobs:
         yarn build 
     - uses: w9jds/firebase-action@master
       with:
-        args: firebase deploy --token {{FIREBASE_TOKEN}}
+        args: deploy --only hosting
       env:
         FIREBASE_TOKEN: 1//018J-TuXBQOlWCgYIARAAGAESNwF-L9Ir3rOy5FEPFXK-J3S3EAQTHeghHaHgwvPa2WwV0PbrPUdTHiHCodrRjcpaQrC5524KuTI
         
