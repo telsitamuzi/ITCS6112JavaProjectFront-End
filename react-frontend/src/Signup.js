@@ -18,6 +18,15 @@ const Signup = () =>{
     const handleFormSubmit = (e) =>{
         e.preventDefault();
     }
+    const handleFormClear = (e) =>{
+        setData({
+            firstname:"",
+            lastname:"",
+            email:"",
+            password:"", 
+        });
+       
+    }
     return(
 
         <>
@@ -47,8 +56,11 @@ const Signup = () =>{
                         <button className="submit" onClick={handleFormSubmit}>
                             Sign Up
                         </button>
-                        { JSON.stringify(data) }
+                        <button className="submit" onClick={handleFormClear}>
+                           Clear
+                        </button>
                     </div>
+                    { JSON.stringify(data) }
                 </form>
             </div>
         </div>
