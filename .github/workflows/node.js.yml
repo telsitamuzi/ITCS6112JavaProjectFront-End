@@ -39,4 +39,8 @@ jobs:
         cd react-frontend
         yarn global add firebase-tools -g 
     - name: firebase deploy
-      run: firebase deploy --token AIzaSyAQgrzKb-7GG7xwTGbHO_MA1_zLMCrRqR0
+      uses: w9jds/firebase-action@master
+      with:
+        args: deploy --only hosting
+      env:
+        FIREBASE_TOKEN: 1//018J-TuXBQOlWCgYIARAAGAESNwF-L9Ir3rOy5FEPFXK-J3S3EAQTHeghHaHgwvPa2WwV0PbrPUdTHiHCodrRjcpaQrC5524KuTI
