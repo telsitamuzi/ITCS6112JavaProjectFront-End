@@ -6,7 +6,6 @@ import Signup from './Signup';
 function App() {
   return (
     <div className="App">
-        <DemoComponent />
         <Signup/>
     </div>
   );
