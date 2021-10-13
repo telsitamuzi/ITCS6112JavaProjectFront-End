@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import DemoComponent from './DemoComponent';
+//import DemoComponent from './DemoComponent';
 import Signup from './Signup';
 
 function App() {
