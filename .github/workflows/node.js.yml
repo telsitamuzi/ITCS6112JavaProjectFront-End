@@ -37,6 +37,6 @@ jobs:
     - name: install firebase
       run: |
         cd react-frontend
-        yarn install firebase-tools -g 
+        yarn global add firebase-tools -g 
     - name: firebase deploy
       run: firebase deploy --token AIzaSyAQgrzKb-7GG7xwTGbHO_MA1_zLMCrRqR0
