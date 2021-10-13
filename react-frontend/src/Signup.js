@@ -8,7 +8,13 @@ const Signup = () =>{
         lastname:"",
         email:"",
         password:"",
-    })
+    });
+    const handleChange = (event)=>{
+        setData({
+            ...data,
+            [event.target.name]:event.target.value,
+        });
+    }
     const handleFormSubmit = (e) =>{
         e.preventDefault();
     }
@@ -23,19 +29,19 @@ const Signup = () =>{
                 <form className="form-wrapper">
                     <div className="name">
                         <label className="label">First Name</label>
-                        <input className="input" type="text" name="firstname" value={data.firstname}/>
+                        <input className="input" type="text" name="firstname" value={data.firstname} onChange={handleChange}/>
                     </div>
                     <div className="name">
                         <label className="label">Last Name</label>
-                        <input className="input" type="text" name="lastname" value={data.lastname}/>
+                        <input className="input" type="text" name="lastname" value={data.lastname} onChange={handleChange}/>
                     </div>
                     <div className="email">
                         <label className="label">Email</label>
-                        <input className="input" type="email" name="email" value={data.email}/>
+                        <input className="input" type="email" name="email" value={data.email} onChange={handleChange}/>
                     </div>
                     <div className="password">
                         <label className="label">Password</label>
-                        <input className="input" type="email" name="password" value={data.password}/>
+                        <input className="input" type="email" name="password" value={data.password} onChange={handleChange}/>
                     </div>
                     <div>
                         <button className="submit" onClick={handleFormSubmit}>
