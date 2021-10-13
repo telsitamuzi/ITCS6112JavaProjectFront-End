@@ -1,0 +1,46 @@
+# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+#https://github.com/satansdeer/gh-actions-react-firebase-example/blob/master/.github/workflows/firebase.yml
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: react-frontend/package-lock.json
+    - run: npm install -g yarn
+    - name: yarn install, build and test
+      run: |
+        cd react-frontend
+        yarn install
+        yarn build
+    - name: install firebase
+      run: |
+        cd react-frontend
+        yarn global add firebase-tools -g 
+    - name: firebase deploy
+      uses: w9jds/firebase-action@master
+      with:
+        args: deploy --only hosting
+      env:
+        FIREBASE_TOKEN: 1//018J-TuXBQOlWCgYIARAAGAESNwF-L9Ir3rOy5FEPFXK-J3S3EAQTHeghHaHgwvPa2WwV0PbrPUdTHiHCodrRjcpaQrC5524KuTI
