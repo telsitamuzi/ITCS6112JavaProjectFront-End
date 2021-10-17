@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 //import Login from "./components/login.component";
 import SignUp from './signup/signup';
 import SignIn from './signin/signin';
+import ThankYou from './signup/thankyou';
 
 function App() {
   return (<Router>
@@ -29,9 +30,10 @@ function App() {
       <div className="auth-wrapper">
         <div className="auth-inner">
           <Switch>
-            <Route exact path='/' component={SignIn} />
+            <Route exact path='/' component={SignUp} />
             <Route path="/sign-in" component={SignIn} />
             <Route path="/sign-up" component={SignUp} />
+            <Route path="/thank-you" component={ThankYou} />
           </Switch>
         </div>
       </div>
