@@ -32,6 +32,7 @@ const SignUp = () =>{
 
     
     }
+    /*
     const handleFormClear = (e) =>{
         setformDta({
             firstname:"",
@@ -41,6 +42,7 @@ const SignUp = () =>{
         });
        
     }
+    */
     return (
         <form>
             <h3>Sign Up</h3>
