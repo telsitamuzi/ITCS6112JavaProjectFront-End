@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import axios from 'axios';
 import { useHistory } from "react-router-dom";
 const SignUp = () =>{
-    const sign_up_url='http://localhost:3000/sign-up-process';
+    //const sign_up_url='http://localhost:3000/sign-up-process';
+    const sign_up_url='http://localhost:8080/users/register';
     let history = useHistory();
     const[formDta, setformDta] = useState({
         firstname:"",
@@ -17,15 +18,15 @@ const SignUp = () =>{
           
         });
     }
+   
     const handleSubmit = (event) =>{
        event.preventDefault();
        axios.post(sign_up_url,{
-           firstname:formDta.firstname,
-           lastname: formDta.lastname,
+           firstName:formDta.firstname,
+           lastName: formDta.lastname,
            email:formDta.email,
            password:formDta.password
        }).then(res=> {
-           console.log(res.data);
             history.push("/thank-you");
        });
 
