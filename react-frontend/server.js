@@ -14,16 +14,16 @@ app.get("/", (req, res, next) => {
 
 
 //POST call sign -up-process
-app.post('/sign-up-process', function (req, res) {  
-    response = {  
-        firstname:req.body.firstname,
-        lastname: req.body.lastname,
-        email:req.body.email,
-        password:req.body.password
-    };  
-    console.log(response);  
-    res.end(JSON.stringify(response));  
- })  
+// app.post('/sign-up-process', function (req, res) {  
+//     response = {  
+//         firstname:req.body.firstname,
+//         lastname: req.body.lastname,
+//         email:req.body.email,
+//         password:req.body.password
+//     };  
+//     console.log(response);  
+//     res.end(JSON.stringify(response));  
+//  })  
 
 app.listen(3000, () => {
  console.log("Server running on port  http://localhost:3000");
