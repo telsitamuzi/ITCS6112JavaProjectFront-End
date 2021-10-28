@@ -40,7 +40,7 @@ const Signin = () =>{
 
                 <div className="form-group">
                     <label>Password</label>
-                    <input type="password" className="form-control"/>
+                    <input type="password" className="form-control" name="password" value={formDta.password} onChange={handleChange}/>
                 </div>
 
                 <div className="form-group">

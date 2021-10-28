@@ -5,7 +5,7 @@ export default class ThankYou extends Component {
         return (
             <div>
                 <p>Thank you for signin up. Please use your credentials to log back in.</p>
-                </div>
+            </div>
         );
     }
 }
