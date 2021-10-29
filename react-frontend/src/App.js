@@ -11,6 +11,7 @@ import Admin from './admin/admin';
 import CreateEvent from './admin/component/CreateEvent';
 import Navbar from './nav/navbar';
 import ViewEvent from './admin/component/viewEvent';
+import Success from './signin/success';
 
 function App() {
   return (<Router>
