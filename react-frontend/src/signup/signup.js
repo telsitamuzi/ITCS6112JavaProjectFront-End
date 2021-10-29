@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
+import '../screen.css';
 import { useHistory } from "react-router-dom";
 const SignUp = () =>{
     //const sign_up_url='http://localhost:3000/sign-up-process';
@@ -44,12 +45,15 @@ const SignUp = () =>{
     }
     */
     return (
+        <div className="container">
+     <div className="auth-wrapper">
+        <div className="auth-inner">
         <form>
             <h3>Sign Up</h3>
 
             <div className="form-group">
                 <label>First name</label>
-                <input type="text" className="form-control" name="firstname" value={formDta.firstname} onChange={handleChange}/>
+                <input type="text" className="form-control " name="firstname" value={formDta.firstname} onChange={handleChange}/>
             </div>
 
             <div className="form-group">
@@ -66,15 +70,18 @@ const SignUp = () =>{
                 <label>Password</label>
                 <input type="password" className="form-control" name="password" value={formDta.password} onChange={handleChange}/>
             </div>
-
+            <br/>
             <button type="submit" className="btn btn-primary btn-block" onClick={handleSubmit} >
                 Sign Up
                 </button>
         
             <p className="forgot-password text-right">
-                Already registered <a href="/s">sign in?</a>
+                Already registered <a href="/sign-in">sign in?</a>
             </p>
         </form>
+        </div>
+        </div>
+        </div>
         
     );
 }
