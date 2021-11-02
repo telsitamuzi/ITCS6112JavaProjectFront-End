@@ -49,7 +49,7 @@ const loadEvent = async () =>{
         <div className="container">
              <div className="w-75 mx-auto shadow p-5">
         <form>
-            <h3>Update Event for {evntDta.eventId}</h3>
+            <h3>Update Event for {evntDta.id}</h3>
             <Link className="btn btn-primary" to="/admin">
             back to Home
           </Link>
@@ -77,7 +77,7 @@ const loadEvent = async () =>{
                 <label>End Date</label>
                 <input type="text" className="form-control" name="eventEndTime" value={evntDta.eventEndTime} onChange={handleChange} />
             </div>
-            <button type="submit" className="btn btn-success btn-block" onClick={handleSubmit} >
+            <button type="submit" className="btn btn-warning btn-block" onClick={handleSubmit} >
                 Update Event
             </button>
         </form>

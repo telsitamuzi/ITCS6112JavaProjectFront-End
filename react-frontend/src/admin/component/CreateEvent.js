@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import { useHistory } from "react-router-dom";
+import { useHistory,Link } from "react-router-dom";
 const CreateEvent = () => {
     const create_post_url = 'http://localhost:3004/getevents';
     let history = useHistory();
@@ -43,7 +43,9 @@ const CreateEvent = () => {
         <div className="container">
         <form>
             <h3>Create Event</h3>
-
+            <Link className="btn btn-info" to="/admin">
+            Go Back
+          </Link>
             <div className="form-group">
                 <label>Event ID</label>
                 <input type="text" className="form-control" name="eventId" value={evntDta.eventId} onChange={handleChange} />

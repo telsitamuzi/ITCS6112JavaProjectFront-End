@@ -21,20 +21,22 @@ const ViewEvent = () => {
         setViewEvent(res.data);
       };
       return (
-        <div className="container py-4">
+        <div className="container">
           <Link className="btn btn-primary" to="/admin">
             back to Home
           </Link>
           <hr />
-          <ul className="list-group w-50">
-            <li className="list-group-item">Event id : {viewEvent.eventId}</li>
+          <ul className="list-group">
+            <li className="list-group-item active">Event id : {viewEvent.id}</li>
             <li className="list-group-item">Event Name: {viewEvent.eventName}</li>
             <li className="list-group-item">Description: {viewEvent.description}</li>
             <li className="list-group-item">Location: {viewEvent.location}</li>
             <li className="list-group-item">Start Date: {viewEvent.eventStartTime}</li>
             <li className="list-group-item">End Date: {viewEvent.eventEndTime}</li>
           </ul>
+         
         </div>
+        
       );
 }
 

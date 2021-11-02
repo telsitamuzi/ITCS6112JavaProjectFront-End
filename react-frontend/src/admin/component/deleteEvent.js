@@ -42,13 +42,13 @@ const loadEvent = async () =>{
     return (
         <div className="container">
              <div className="w-75 mx-auto shadow p-5">
-        <form>
             <h3>Delete Event for {evntDta.eventId}</h3>
             <Link className="btn btn-primary" to="/admin">
             back to Home
           </Link>
             <div className="form-group">
                 <label>Event Title</label>
+                
                 <input type="text" className="form-control" name="eventName" value={evntDta.eventName} onChange={handleChange} />
             </div>
 
@@ -74,7 +74,7 @@ const loadEvent = async () =>{
             <button type="submit" className="btn btn-danger btn-block" onClick={handleSubmit} >
                 Delete Event
             </button>
-        </form>
+        
         </div>
         </div>
     );

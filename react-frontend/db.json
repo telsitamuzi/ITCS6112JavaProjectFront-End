@@ -2,10 +2,10 @@
   "getevents": [
     {
       "eventName": "Library events",
-      "description": "events for library111122222",
+      "description": "events for library",
       "eventStartTime": "Center",
       "eventEndTime": "Place",
-      "location": "UNCC Library23232",
+      "location": "UNCC Library",
       "id": 1
     },
     {
@@ -85,49 +85,20 @@
       "location": "Shirley"
     },
     {
-      "id": 8,
-      "eventId": 8,
       "eventName": "Electrical Engineer",
-      "description": "Occup of hv veh injured in clsn w ped/anml nontraf, sequela",
-      "hosts": "Maddy",
+      "description": "testttt",
       "eventStartTime": "Center",
       "eventEndTime": "Parkway",
-      "capactiy": "78.93.70.155",
-      "venue": "Damiano",
-      "venuePincode": 8,
-      "createdBy": "Merilyn",
-      "eventPointOfCotactEmail": "mpane7@newyorker.com",
-      "location": "Riobard"
+      "location": "Riobard",
+      "id": 8
     },
     {
-      "id": 9,
-      "eventId": 9,
       "eventName": "Software Consultant",
-      "description": "Local-rel (focal) idio epi w seiz of loc onset, not ntrct",
-      "hosts": "Angy",
+      "description": "test",
       "eventStartTime": "Hill",
       "eventEndTime": "Park",
-      "capactiy": "201.113.102.192",
-      "venue": "Jacquelynn",
-      "venuePincode": 9,
-      "createdBy": "Gavan",
-      "eventPointOfCotactEmail": "aclorley8@nyu.edu",
-      "location": "Agata"
-    },
-    {
-      "id": 10,
-      "eventId": 10,
-      "eventName": "Business Systems Development Analyst",
-      "description": "Crushing injury of unspecified forearm",
-      "hosts": "Rodi",
-      "eventStartTime": "Parkway",
-      "eventEndTime": "Terrace",
-      "capactiy": "204.85.101.68",
-      "venue": "Hedvig",
-      "venuePincode": 10,
-      "createdBy": "Shalom",
-      "eventPointOfCotactEmail": "rduberry9@microsoft.com",
-      "location": "Lilah"
+      "location": "Agata",
+      "id": 9
     }
   ]
 }
