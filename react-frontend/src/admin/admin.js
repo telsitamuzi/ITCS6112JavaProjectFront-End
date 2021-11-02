@@ -14,17 +14,20 @@ const Admin = () => {
 
     const loadAllEvents = async () => {
         const response = await axios.get(get_all_events_url);
-        console.log(response.data);
+        //console.log(response.data);
         setEvents(response.data);
     }
-
+    const deleteEvent = async id => {
+        await axios.delete(`http://localhost:3004/getevents/${id}`);
+        loadAllEvents();
+      };
     return (
         <div className="container">
-                            <Link className="btn btn-primary" to="/admin/create-event">Create Event</Link>
+        <Link className="btn btn-primary" to="/admin/create-event">Create Event</Link>
+        
+        <div className="py-4">
 
-            <div className="py-4">
-
-                <table class="table table-striped table-sm">
+                <table class="table border shadow">
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">Event ID</th>
@@ -47,17 +50,18 @@ const Admin = () => {
                                     <td>{evnt.eventStartTime}</td>
                                     <td>{evnt.eventEndTime}</td>
                                     <td>
-                                        <Link className="btn btn-primary mr-2" to={`/view-event/${evnt.id}`}>View</Link>
-                                        <Link className="btn btn-outline-primary mr-2">Edit</Link>
-                                        <Link className="btn btn-danger">Delete</Link>
+                                        <Link className="btn btn-primary mr-2" to={`/admin/view-event/${evnt.id}`}>View</Link>
+                                        <Link className="btn btn-outline-primary mr-2" to={`/admin/update-event/${evnt.id}`}>Edit</Link>
+                                        <Link className="btn btn-danger" to={`/admin/delete-event/${evnt.id}`}>Delete</Link>
                                     </td>
                                 </tr>
                             ))
                         }
                     </tbody>
                 </table>
+                </div>
             </div>
-        </div>
+       
     );
 }
 export default Admin;

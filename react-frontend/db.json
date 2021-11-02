@@ -1,49 +1,28 @@
 {
   "getevents": [
     {
-      "id": 1,
-      "eventId": 1,
-      "eventName": "Environmental Tech",
-      "description": "Papyraceous fetus, unspecified trimester, fetus 4",
-      "hosts": "Damara",
+      "eventName": "Library events",
+      "description": "events for library111122222",
       "eventStartTime": "Center",
       "eventEndTime": "Place",
-      "capactiy": "116.191.69.88",
-      "venue": "Karissa",
-      "venuePincode": 1,
-      "createdBy": "Cointon",
-      "eventPointOfCotactEmail": "dchurchman0@vistaprint.com",
-      "location": "Carrissa"
+      "location": "UNCC Library23232",
+      "id": 1
     },
     {
-      "id": 2,
-      "eventId": 2,
-      "eventName": "Recruiter",
-      "description": "Gastr contents in oth prt resp tract cause oth injury, init",
-      "hosts": "Heddi",
+      "eventName": "Student Events",
+      "description": "event desc",
       "eventStartTime": "Point",
       "eventEndTime": "Park",
-      "capactiy": "236.47.170.19",
-      "venue": "Ashely",
-      "venuePincode": 2,
-      "createdBy": "Roxi",
-      "eventPointOfCotactEmail": "hautrie1@vistaprint.com",
-      "location": "Liza"
+      "location": "Student Union",
+      "id": 2
     },
     {
-      "id": 3,
-      "eventId": 3,
-      "eventName": "Chemical Engineer",
+      "eventName": "Chemical Engineer111",
       "description": "Rheumatoid nodule",
-      "hosts": "Natalie",
       "eventStartTime": "Place",
       "eventEndTime": "Way",
-      "capactiy": "113.44.228.190",
-      "venue": "Farrel",
-      "venuePincode": 3,
-      "createdBy": "Inger",
-      "eventPointOfCotactEmail": "nellicock2@g.co",
-      "location": "Verna"
+      "location": "Verna",
+      "id": 3
     },
     {
       "id": 4,
@@ -149,51 +128,6 @@
       "createdBy": "Shalom",
       "eventPointOfCotactEmail": "rduberry9@microsoft.com",
       "location": "Lilah"
-    },
-    {
-      "eventId": "dasd",
-      "eventName": "dasdasdqd",
-      "description": "dqwd",
-      "eventStartTime": "dasd",
-      "eventEndTime": "dasd",
-      "location": "asdxas",
-      "id": 11
-    },
-    {
-      "eventId": "",
-      "eventName": "",
-      "description": "",
-      "eventStartTime": "",
-      "eventEndTime": "",
-      "location": "",
-      "id": 12
-    },
-    {
-      "eventId": "",
-      "eventName": "",
-      "description": "",
-      "eventStartTime": "",
-      "eventEndTime": "",
-      "location": "",
-      "id": 13
-    },
-    {
-      "eventId": "weqwe",
-      "eventName": "eqwe",
-      "description": "wqe",
-      "eventStartTime": "qwedasd",
-      "eventEndTime": "eqwe",
-      "location": "eqwe",
-      "id": 14
-    },
-    {
-      "eventId": "",
-      "eventName": "",
-      "description": "",
-      "eventStartTime": "",
-      "eventEndTime": "",
-      "location": "",
-      "id": 15
     }
   ]
 }

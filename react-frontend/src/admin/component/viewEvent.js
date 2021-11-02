@@ -25,7 +25,6 @@ const ViewEvent = () => {
           <Link className="btn btn-primary" to="/admin">
             back to Home
           </Link>
-          <h1 className="display-4">Event Id: {id}</h1>
           <hr />
           <ul className="list-group w-50">
             <li className="list-group-item">Event id : {viewEvent.eventId}</li>

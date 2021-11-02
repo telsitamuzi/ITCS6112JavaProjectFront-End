@@ -12,6 +12,8 @@ import CreateEvent from './admin/component/CreateEvent';
 import Navbar from './nav/navbar';
 import ViewEvent from './admin/component/viewEvent';
 import Success from './signin/success';
+import UpdateEvent from './admin/component/updateEvent';
+import DeleteEvent from './admin/component/deleteEvent';
 
 function App() {
   return (<Router>
@@ -27,7 +29,9 @@ function App() {
         <Route exact path="/thank-you" component={ThankYou} />
         <Route exact path="/admin" component={Admin} />
         <Route path="/admin/create-event" component={CreateEvent} />
-        <Route path="/view-event/:id" component={ViewEvent} />
+        <Route path="/admin/view-event/:id" component={ViewEvent} />
+        <Route path="/admin/update-event/:id" component={UpdateEvent} />
+        <Route path="/admin/delete-event/:id" component={DeleteEvent} />
 
 
       </Switch>
