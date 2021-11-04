@@ -14,16 +14,15 @@ import ViewEvent from './admin/component/viewEvent';
 import Success from './signin/success';
 import UpdateEvent from './admin/component/updateEvent';
 import DeleteEvent from './admin/component/deleteEvent';
+import Dashboard from './Dashboard/dashboard';
 
 function App() {
   return (<Router>
     <div className="App">
 
-   <Navbar />
-
-
       <Switch>
         <Route exact path='/' component={SignIn} />
+        <Route exact path='/Dashboard' component={Dashboard} />
         <Route exact path="/sign-in" component={SignIn} />
         <Route exact path="/sign-up" component={SignUp} />
         <Route exact path="/thank-you" component={ThankYou} />

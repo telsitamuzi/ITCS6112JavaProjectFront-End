@@ -25,7 +25,7 @@ const Signin = () => {
             password: formDta.password
         }).then(res => {
             console.log(res);
-            history.push("/success");
+            history.push("/Dashboard");
         });
 
 

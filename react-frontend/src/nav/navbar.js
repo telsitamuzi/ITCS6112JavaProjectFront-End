@@ -8,7 +8,11 @@ const Navbar = () => {
         <Link className="navbar-brand" to="/">
           Event Management
         </Link>
-              </div>
+
+        <Link to="/admin">
+          Admin
+        </Link>
+      </div>
     </nav>
   );
 };
