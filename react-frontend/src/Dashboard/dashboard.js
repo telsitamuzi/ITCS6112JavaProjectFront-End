@@ -1,10 +1,42 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory, useParams} from "react-router-dom";
 import Navbar from '../nav/navbar';
 
 const Dashboard = () => {
     
+  const get_all_events_url = 'http://localhost:3004/getevents';
+  const [events, setEvents] = useState([]);
+
+
+    useEffect(() => {
+        loadAllEvents();
+    }, []);
+
+
+    const loadAllEvents = async () => {
+        const response = await axios.get(get_all_events_url);
+        //console.log(response.data);
+        setEvents(response.data);
+    }
+
+    const Rsvp = () => {
+      // const update_event_post_url = `http://localhost:3004/getevents/${id}`;
+      const rsvp_url='http://localhost:3004/getevents/${id}`';
+
+       let history = useHistory();
+       
+       const handleRsvp = (event) => {
+           event.preventDefault();
+           axios.post( rsvp_url)
+            
+          .then(res=> {
+            history.push("/Rsvp");
+       });
+
+       }
+    
+  }
     return (
       <>
       <Navbar/>
@@ -22,11 +54,27 @@ const Dashboard = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        
+                        {
+                            events.map((evnt, index) => (
+                                <tr>
+                                    <th scope="row">{index + 1}</th>
+                                    <td>{evnt.eventName}</td>
+                                    <td>{evnt.description}</td>
+                                    <td>{evnt.location}</td>
+                                    <td>{evnt.eventStartTime}</td>
+                                    <td>{evnt.eventEndTime}</td>
+                                    <td>
+                                        <Link className="btn btn-primary btn-sm" to={`/admin/view-event/${evnt.id}`}>View</Link>
+                                        <Link className="btn btn-outline-primary btn-sm" to={`/admin/rsvp/${evnt.id}`}>RSVP</Link> 
+                                    </td>
+                                </tr>
+                            ))
+                        }
                     </tbody>
                 </table>
                 </div>
       </>
     );
 }
+
 export default Dashboard;

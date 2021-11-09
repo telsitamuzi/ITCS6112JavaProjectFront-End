@@ -1,6 +1,17 @@
 .App {
 }
 
+.selectBox{
+  text-align: center;
+  margin-top: 20px;
+  justify-content: center;
+
+}
+
+input[type="radio"]{
+  margin: 0 10px 0 10px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

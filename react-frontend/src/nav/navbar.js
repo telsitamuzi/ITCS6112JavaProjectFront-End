@@ -12,6 +12,7 @@ const Navbar = () => {
         <Link to="/admin">
           Admin
         </Link>
+
       </div>
     </nav>
   );

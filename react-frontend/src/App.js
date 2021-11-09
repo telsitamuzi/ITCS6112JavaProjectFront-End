@@ -15,6 +15,7 @@ import Success from './signin/success';
 import UpdateEvent from './admin/component/updateEvent';
 import DeleteEvent from './admin/component/deleteEvent';
 import Dashboard from './Dashboard/dashboard';
+import Rsvp from './admin/component/Rsvp';
 
 function App() {
   return (<Router>
@@ -26,11 +27,13 @@ function App() {
         <Route exact path="/sign-in" component={SignIn} />
         <Route exact path="/sign-up" component={SignUp} />
         <Route exact path="/thank-you" component={ThankYou} />
+        <Route exact path="/Rsvp" component={Rsvp} />
         <Route exact path="/admin" component={Admin} />
         <Route path="/admin/create-event" component={CreateEvent} />
         <Route path="/admin/view-event/:id" component={ViewEvent} />
         <Route path="/admin/update-event/:id" component={UpdateEvent} />
         <Route path="/admin/delete-event/:id" component={DeleteEvent} />
+        <Route path="/admin/rsvp/:id" component={Rsvp} />
 
 
       </Switch>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+
 const ViewEvent = () => {
     //const view_event_url = "http://localhost:3004/getevents";
     const [viewEvent, setViewEvent] = useState({
@@ -20,6 +21,7 @@ const ViewEvent = () => {
         const res = await axios.get(`http://localhost:3004/getevents/${id}`);
         setViewEvent(res.data);
       };
+
       return (
         <div className="container">
           <Link className="btn btn-primary" to="/admin">
