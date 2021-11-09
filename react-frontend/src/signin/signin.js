@@ -56,7 +56,7 @@ const Signin = () => {
                             <div class="row">
                                 <div class="col-sm">
                                     <p className="forgot-password text-right">
-                                        Forgot <a href="/">password?</a>
+                                        Forgot <a href="/reset-password">password?</a>
                                     </p>
                                 </div>
                                 <div class="col-sm">

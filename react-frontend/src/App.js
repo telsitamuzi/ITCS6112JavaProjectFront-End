@@ -12,6 +12,7 @@ import CreateEvent from './admin/component/CreateEvent';
 import Navbar from './nav/navbar';
 import ViewEvent from './admin/component/viewEvent';
 import Success from './signin/success';
+import ResetPassword from './resetpassword/resetpassword';
 import UpdateEvent from './admin/component/updateEvent';
 import DeleteEvent from './admin/component/deleteEvent';
 import Dashboard from './Dashboard/dashboard';
@@ -34,6 +35,7 @@ function App() {
         <Route path="/admin/update-event/:id" component={UpdateEvent} />
         <Route path="/admin/delete-event/:id" component={DeleteEvent} />
         <Route path="/admin/rsvp/:id" component={Rsvp} />
+        <Route exact path="/reset-password" component={ResetPassword}/>
 
 
       </Switch>
